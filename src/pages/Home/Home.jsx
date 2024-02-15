@@ -1,9 +1,9 @@
-import React from 'react';
+
 
 const Home = () => {
     return (
-        <div>
-            <h2>This is orginal home page</h2>
+        <div >
+            <h3>this is home</h3>
         </div>
     );
 };
