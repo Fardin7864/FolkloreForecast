@@ -1,8 +1,3 @@
-# React + Vite
+# FolkloreForecast
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p className = "text-xl"><span className="font-extrabold">Story behind the name </span>In Bangladesh, traditional folklore often includes stories, myths, and legends related to the changing seasons. This app name, "FolkloreForecast," suggests that the weather forecasts provided are not just about temperature and precipitation but are intertwined with the rich cultural narratives and beliefs surrounding each season. It implies that users can expect to discover more than just weather predictions; they'll also encounter the fascinating stories and folklore associated with the changing climate of Bangladesh.</p>
