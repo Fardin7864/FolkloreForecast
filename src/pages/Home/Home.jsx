@@ -1,11 +1,11 @@
 import axios from "axios";
-import { useContext, useEffect, useState } from "react";
-import { SearchContext } from "../../context/SearchContext";
+import { useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import Clock from "../../components/Clock/Clock";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
 import MapToDisplay from "../../components/Map/Map";
 import Forcast from "./Forecast/Forcast";
+import HeroBlog from "../../components/HeroBlog/HeroBlog";
 
 const Home = () => {
   const search = useOutletContext();
@@ -142,6 +142,9 @@ const Home = () => {
       </div>
       <div>
         <Forcast todayForecast={todayForecast} />
+      </div>
+      <div>
+        <HeroBlog/>
       </div>
     </div>
   );

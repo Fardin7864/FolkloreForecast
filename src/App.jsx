@@ -1,11 +1,9 @@
 
-import { useContext, useState } from 'react';
+import {  useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import { Outlet } from 'react-router-dom';
-import { SearchContext } from './context/SearchContext';
 
 const App = () => {
-    const {isDay} = useContext(SearchContext)
 
      const [searchCity, setSearchCity] = useState('Dhaka');
      const handleSearch = (city) => { 

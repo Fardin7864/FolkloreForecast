@@ -1,5 +1,4 @@
-import React from "react";
-
+ 
 const Forcast = ({ todayForecast }) => {
   const date = new Date().toString().split(" ")[1];
   return (
