@@ -27,12 +27,12 @@ const Allblogs = () => {
           <Blogs></Blogs>
         </div>
         <div className=" w-full lg:w-3/12">
-          <img src={ad} alt="" className=" w-full mt-16" />
+          {/* <img src={ad} alt="" className=" w-full mt-16" /> */}
           <Toppost></Toppost>
           <Followus></Followus>
           <TrandingNow></TrandingNow>
           <Subscription></Subscription>
-          <img src={ad2} alt="" className=" w-full mt-16" />
+          {/* <img src={ad2} alt="" className=" w-full mt-16" /> */}
         </div>
       </div>
     </div>

@@ -21,15 +21,7 @@ const TrandingNow = () => {
     const banner = (ad?.data[0]);
 
     
-    // useEffect(() => { 
-    //     axios.get('/blogs?sortFild=views&sortOrder=desc&page=0&pageSize=5')
-    //     .then(res => setTranding(res.data))
-    //     axios.get('/advertise?category=home-ad-right-1')
-    //     .then(res => {
-    //         setBanner(res.data[0])
-    //     })
-    //  },[])
-// console.log(banner)
+
   return (
     <div className=" w-full flex flex-col justify-start pl-7">
       <div className=" flex justify-between items-center gap-2 w-full mb-5">
