@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const PopulerCarousel = ({ citys }) => {
   const [isCelsius, setIsCelsius] = useState(true); // State to track temperature unit
@@ -81,7 +82,7 @@ const PopulerCarousel = ({ citys }) => {
           </div>
         </div>
         <div className=" flex items-center text-white px-4 bg-[#325b8f] text-sm">
-          {/* TODO BUTTON */}
+         <Link to={'/blogs'}> <button className=" btn">All Blogs</button></Link>
         </div>
 
       </div>

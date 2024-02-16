@@ -6,6 +6,7 @@ import { AiOutlineExclamationCircle } from "react-icons/ai";
 import MapToDisplay from "../../components/Map/Map";
 import Forcast from "./Forecast/Forcast";
 import HeroBlog from "../../components/HeroBlog/HeroBlog";
+import Banner from "./Banner/Banner";
 
 const Home = () => {
   const search = useOutletContext();
@@ -145,6 +146,7 @@ const Home = () => {
       </div>
       <div>
         <HeroBlog/>
+        <Banner/>
       </div>
     </div>
   );
