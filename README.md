@@ -1,6 +1,6 @@
 # FolkloreForecast
 
-### Live Demo : 
+### Live Demo : https://weather-app-by-fardin.netlify.app/
 
 ## Overview
 
@@ -26,6 +26,8 @@ In Bangladesh, traditional folklore often includes stories, myths, and legends r
 
 
 ## Installation Proces
+
+- git clone https://github.com/Fardin7864/FolkloreForecast.git
 
 - npm i 
 - npm run dev
