@@ -13,7 +13,7 @@ const App = () => {
       }
 
     return (
-        <div className={` ${isDay ? ('bg-[#235191]'):('bg-[#29394c]')} h-72 w-full mx-auto font-poppins` }>
+        <div className={` ${isDay ? ('bg-[#235191]'):('bg-[#29394c]')} h-[100vh] w-full mx-auto font-poppins` }>
             <Navbar handleSearch={handleSearch}/>
             <div className='max-w-7xl mx-auto'>
             <Outlet context ={searchCity}/>
