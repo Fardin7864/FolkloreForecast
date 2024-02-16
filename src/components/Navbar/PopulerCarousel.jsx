@@ -16,7 +16,8 @@ const PopulerCarousel = ({ citys }) => {
     khulna,
   ];
   const toggleTemperatureUnit = () => {
-    setIsCelsius((prevState) => !prevState); // Toggle between Celsius and Fahrenheit
+    // Toggle between Celsius and Fahrenheit
+    setIsCelsius((prevState) => !prevState); 
   };
 
   const getTemperature = (temp_c, temp_f) => {
