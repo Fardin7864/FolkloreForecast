@@ -64,7 +64,7 @@ const Home = () => {
 //   console.log(todayForecast?.forecast?.forecastday[0]);
   return (
     <div data-aos="fade-right" className=" my-7">
-      <div className=" flex flex-row gap-5">
+      <div className=" flex flex-col lg:flex-row gap-5">
         <div
           className=" lg:w-2/4 rounded-lg py-5 px-3"
           style={{
@@ -81,7 +81,7 @@ const Home = () => {
             </p>
             <Clock />
           </div>
-          <div className=" flex items-center gap-1">
+          <div className=" flex flex-col md:flex-row items-center gap-1">
             <img
               src={currentWeatherData?.current?.condition?.icon}
               alt=""
@@ -103,7 +103,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <p className=" text-gray-200">
+          <p className=" text-gray-200 my-5">
             There will be mostly {currentWeatherData?.current?.condition?.text}{" "}
             skies. The high will be{" "}
             {todayForecast?.forecast?.forecastday[0]?.day.maxtemp_c} °C .

@@ -1,13 +1,11 @@
 import React from "react";
 
 const Forcast = ({ todayForecast }) => {
-//   console.log(todayForecast?.forecast?.forecastday);
   const date = new Date().toString().split(" ")[1];
-//   console.log(date)
   return (
     <div className=" my-6">
       <h4 className=" text-gray-50 px-5 text-lg my-3">5 DAY FORECAST</h4>
-      <div className=" grid grid-cols-1 md:grid-cols-5 gap-5">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
         {todayForecast?.forecast?.forecastday?.map((day) => (
           <div key={day.date} className="card shadow-xl bg-[#285593] hover:opacity-70">
             <div className="card-body">
