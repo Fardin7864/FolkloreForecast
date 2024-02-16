@@ -135,7 +135,7 @@ const Blogs = () => {
     <div>
       <p className=" mb-6 text-sm c-primary flex items-center">
         YOU ARE AT
-        <span className=" text-gray-600 flex items-center gap-1 text-xs">
+        <span className=" text-gray-pink-700 flex items-center gap-1 text-lg">
           {" "}
           : <Link to="/">HOME</Link> <AiOutlineDoubleRight /> ALL
         </span>
@@ -143,7 +143,6 @@ const Blogs = () => {
       {/* Title section */}
       <div className="border-l-4 pl-4 border-l-pink-700 flex justify-between items-center gap-4 w-full">
         <h1 className=" text-xl md:text-2xl font-bold">All Blog</h1>
-        {/* <div className=" border border-r-0 border-l-0 border-gray-300 h-[4px] w-3/12 lg:w-7/12"></div> */}
       </div>
         {/* filter and search section */}
         <div className=" flex lg:flex-row flex-col items-center gap-2 mt-2 ">
@@ -153,7 +152,7 @@ const Blogs = () => {
             <select
               value={category}
               onChange={handleCategory}
-              className=" border-2 rounded-md p-1 overflow-y-auto"
+              className=" border-2 rounded-md p-1 overflow-y-auto text-gray-600"
             >
               <option value="">All</option>
               <option value="Sports">Sports</option>
@@ -183,7 +182,7 @@ const Blogs = () => {
                 name="search"
                 placeholder="Search By Title ..."
                 id=""
-                className=" border border-pink-700 rounded-r-none p-2 w-11/12 rounded-lg"
+                className=" border border-pink-700 rounded-r-none p-2 w-11/12 rounded-lg text-gray-700"
               />
               <button
                 type="submit"
@@ -242,7 +241,7 @@ const Blogs = () => {
           <div className=" flex items-center gap-3">
             <p>Total Items:</p>
             <select
-              className=" border border-orange-500 p-2"
+              className=" border border-orange-500 p-2 text-black"
               value={itemsPerPage}
               onChange={handleSize}
             >

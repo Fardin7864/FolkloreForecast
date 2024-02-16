@@ -31,7 +31,7 @@ const SearchProvider = ({children}) => {
         ];
         const requests = cities.map((city) =>
           axios.get(
-            `http://api.weatherapi.com/v1/current.json?key=fbf762b1ae3641d59fe142312241502&q=${city}&aqi=no`
+            `https://api.weatherapi.com/v1/current.json?key=fbf762b1ae3641d59fe142312241502&q=${city}&aqi=no`
           )
         );
   

@@ -6,7 +6,7 @@ import axios from "axios";
 const Banner = () => {
   const {isLoading, data} = useQuery({
     queryKey: ['bannerData'],
-    queryFn: () => axios.get("https://blog-bloom-server-silk.vercel.app/api/v1/blogs?label=sub-banner")
+    queryFn: () => axios.get("https://task-server-sage-sigma.vercel.app/api/v1/blogs?label=sub-banner")
   });
 const blogs = data?.data;
 

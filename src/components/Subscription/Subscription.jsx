@@ -1,10 +1,10 @@
 import { useState } from "react";
  import { useEffect } from "react";
 import { SlEnvolopeLetter } from "react-icons/sl";
-import { toast } from "react-toastify";
 import { useLocation } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import useAxios from "../hooks/useAxios/useAxios";
+import { toast } from "react-toastify";
 
 const Subscription = () => {
   const axios = useAxios();
@@ -62,7 +62,7 @@ const Subscription = () => {
         <img src={adPic?.img} alt="" />
       </div>) : ""
      }
-      <div className=" mt-20 bg-[#f7f7f7] flex items-center justify-center py-10">
+      <div className=" mt-20 bg-[#f7f7f7] flex items-center justify-center py-10 text-gray-800">
         <div className=" flex flex-col justify-center items-center">
           <SlEnvolopeLetter className=" text-6xl" />
           <div className=" px-3">

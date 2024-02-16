@@ -1,12 +1,9 @@
-import logo from "../../assets/logo/logo-discover-01.webp";
-import { useEffect, useState } from "react";
-import useAxios from "../../hooks/useAxios/useAxios";
+// import logo from "../../assets/logo/logo-discover-01.webp";
 import { useQuery } from "@tanstack/react-query";
+import useAxios from "../hooks/useAxios/useAxios";
 
 const Footer = () => {
   const axios = useAxios();
-  // const [populer, setPopuler] = useState();
-  // const [ourPick, setourPick] = useState();
 
   const { isLoading, data } = useQuery({
     queryKey: ['populer'],
@@ -30,7 +27,7 @@ const Footer = () => {
           <p className=" text-xl font-bold text-white border-b-2 border-b-gray-400 w-full pb-3 mb-3">
             ABOUT US
           </p>
-          <img src={logo} alt="" />
+          {/* <img src={logo} alt="" /> */}
           <p className="w-full">
             DISCOVER Industries Ltd.
             <br /> <br />
@@ -93,7 +90,7 @@ const Footer = () => {
       </footer>
       <footer className="footer justify-center items-center p-4 bg-[#081838] text-white border-t border-t-slate-300">
         <aside className="items-center grid-flow-col">
-          <img src={logo} alt="" className=" h-3" />
+          {/* <img src={logo} alt="" className=" h-3" /> */}
           <p>Copyright © 2023 - All right reserved</p>
         </aside>
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">

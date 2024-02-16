@@ -8,7 +8,7 @@ const HeroBlog = () => {
 
   const { isLoading, data } = useQuery({
     queryKey: ['heroData'],
-    queryFn: () => axios.get("https://blog-bloom-server-silk.vercel.app/api/v1/blogs?label=hero"),
+    queryFn: () => axios.get("https://task-server-sage-sigma.vercel.app/api/v1/blogs?label=hero"),
   });
   // console.log(data.data[0].img)
 

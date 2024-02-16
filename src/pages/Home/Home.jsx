@@ -24,7 +24,7 @@ const Home = () => {
     const currentWeather = async () => {
       try {
         const response = await axios.get(
-          `http://api.weatherapi.com/v1/current.json?key=fbf762b1ae3641d59fe142312241502&q=${city}&aqi=no`
+          `https://api.weatherapi.com/v1/current.json?key=fbf762b1ae3641d59fe142312241502&q=${city}&aqi=no`
         );
         return response.data;
       } catch (error) {
@@ -45,7 +45,7 @@ const Home = () => {
     const forecast = async () => {
       try {
         const response = await axios.get(
-          `http://api.weatherapi.com/v1/forecast.json?key=fbf762b1ae3641d59fe142312241502&q=${city}&days=5&aqi=no`
+          `https://api.weatherapi.com/v1/forecast.json?key=fbf762b1ae3641d59fe142312241502&q=${city}&days=5&aqi=no`
         );
         return response.data;
       } catch (error) {

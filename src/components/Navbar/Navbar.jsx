@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { GoSearch } from "react-icons/go";
 import PopulerCarousel from "./PopulerCarousel";
 import { SearchContext } from "../../context/SearchContext";
+import { Link } from "react-router-dom";
 
 const Navbar = ({handleSearch}) => {
   const {isDay, cityData} = useContext(SearchContext)
@@ -17,7 +18,7 @@ const Navbar = ({handleSearch}) => {
 
 
   return (
-    <div className={`w-full ${isDay ? "bg-[#325b8f]" : "bg-[#515f6f]"}`}>
+    <div className={`w-full bg-[#325b8f]`}>
       <div className="max-w-7xl mx-auto flex w-full items-center">
         <form onSubmit={handleSubmit} className="py-3 flex flex-row items-center lg:w-1/4 w-full">
           <input
@@ -30,6 +31,9 @@ const Navbar = ({handleSearch}) => {
             <GoSearch />
           </button>
         </form>
+        <div className="lg:hidden flex items-center text-white px-4 bg-[#325b8f] text-sm">
+         <Link to={'/blogs'}> <button className=" btn">All Blogs</button></Link>
+        </div>
         <div className=" lg:w-3/4 hidden lg:block">
           <PopulerCarousel citys={cityData} />
         </div>

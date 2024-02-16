@@ -2,6 +2,7 @@
 import {  useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import { Outlet } from 'react-router-dom';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
 
@@ -16,6 +17,7 @@ const App = () => {
             <div className='max-w-7xl mx-auto px-5'>
             <Outlet context ={searchCity}/>
             </div>
+            <Footer/>
         </div>
     );
 };
