@@ -31,3 +31,5 @@ In Bangladesh, traditional folklore often includes stories, myths, and legends r
 
 - npm i 
 - npm run dev
+
+  ### Design and Developed by Fardin Hasan Neloy
